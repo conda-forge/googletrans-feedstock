@@ -15,9 +15,8 @@ Compatible with Python 2.7+ and 3.4+. (Note: Python 2 support will be dropped in
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/googletrans-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/googletrans-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/googletrans-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/googletrans-feedstock)
-[![Windows](https://img.shields.io/appveyor/ci/conda-forge/googletrans-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/googletrans-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/googletrans-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/googletrans-feedstock)
 
 Current release info
 ====================
