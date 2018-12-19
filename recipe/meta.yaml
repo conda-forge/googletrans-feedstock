@@ -1,8 +1,8 @@
 {% set name = "googletrans" %}
-{% set version = "2.3.0" %}
+{% set version = "2.4.0" %}
 {% set file_ext = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "49cce281c5ded86fc1ef0429e240da650bae2dd7939dc5e664d80c33fa8ba3b0" %}
+{% set hash_value = "bb4e2a6ee72a24870e696a14238b7305f855a05206ecae10bd50052651984cc5" %}
 
 
 package:
