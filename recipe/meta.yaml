@@ -1,29 +1,21 @@
-{% set name = "googletrans" %}
 {% set version = "2.4.0" %}
-{% set file_ext = "tar.gz" %}
-{% set hash_type = "sha256" %}
-{% set hash_value = "bb4e2a6ee72a24870e696a14238b7305f855a05206ecae10bd50052651984cc5" %}
-
 
 package:
-  name: '{{ name|lower }}'
-  version: '{{ version }}'
+  name: googletrans
+  version: {{ version }}
 
 source:
-  fn: '{{ name }}-{{ version }}.{{ file_ext }}'
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  '{{ hash_type }}': '{{ hash_value }}'
+  url: https://pypi.io/packages/source/g/googletrans/googletrans-{{ version }}.tar.gz
+  sha256: bb4e2a6ee72a24870e696a14238b7305f855a05206ecae10bd50052651984cc5
 
 build:
-  noarch_python: True
-  preserve_egg_dir: True
-  number: 1000
-  script: python -m pip install --no-deps --ignore-installed .
+  noarch: python
+  number: 1001
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   host:
     - python
-    - setuptools
     - pip
     - requests
   run:
@@ -39,10 +31,10 @@ about:
   home: https://github.com/ssut/py-googletrans
   license: MIT
   license_file: LICENSE
-  summary: 'Free Google Translate API for Python. Translates totally free of charge.'
+  summary: 'Free Google Translate API for Python. Translates totally free of charge'
   description: "Googletrans is a free and unlimited python library that implemented Google Translate API. This uses the Google Translate Ajax API to make calls to such methods as detect and translate.\nCompatible with Python 2.7+ and 3.4+. (Note: Python 2 support will be dropped in the next major release.)"
   doc_url: https://github.com/ssut/py-googletrans
-  dev_url: https://py-googletrans.readthedocs.io/en/latest/
+  dev_url: https://py-googletrans.readthedocs.io/en/latest
 
 extra:
   recipe-maintainers:
