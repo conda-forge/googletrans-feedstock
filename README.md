@@ -1,15 +1,13 @@
 About googletrans
 =================
 
-[![Powered by NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](http://numfocus.org)
-
 Home: https://github.com/ssut/py-googletrans
 
 Package license: MIT
 
 Feedstock license: BSD 3-Clause
 
-Summary: Free Google Translate API for Python. Translates totally free of charge.
+Summary: Free Google Translate API for Python. Translates totally free of charge
 
 Googletrans is a free and unlimited python library that implemented Google Translate API. This uses the Google Translate Ajax API to make calls to such methods as detect and translate.
 Compatible with Python 2.7+ and 3.4+. (Note: Python 2 support will be dropped in the next major release.)
@@ -17,9 +15,15 @@ Compatible with Python 2.7+ and 3.4+. (Note: Python 2 support will be dropped in
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/googletrans-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/googletrans-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/googletrans-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/googletrans-feedstock)
-[![Windows](https://img.shields.io/appveyor/ci/conda-forge/googletrans-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/googletrans-feedstock/branch/master)
+
+<table><tr><td>All platforms:</td>
+    <td>
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=&branchName=master">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/googletrans-feedstock?branchName=master">
+      </a>
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================
@@ -52,6 +56,8 @@ conda search googletrans --channel conda-forge
 
 About conda-forge
 =================
+
+[![Powered by NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](http://numfocus.org)
 
 conda-forge is a community-led conda channel of installable packages.
 In order to provide high-quality builds, the process has been automated into the
