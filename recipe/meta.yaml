@@ -1,16 +1,16 @@
-{% set version = "2.4.0" %}
+{% set version = "4.0.2" %}
 
 package:
   name: googletrans
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/g/googletrans/googletrans-{{ version }}.tar.gz
-  sha256: bb4e2a6ee72a24870e696a14238b7305f855a05206ecae10bd50052651984cc5
+  url: https://pypi.org/packages/source/g/googletrans/googletrans-{{ version }}.tar.gz
+  sha256: d9ef126b5d92fabeec0bb9ddcdbeecd43865fc00e17f1dfa07717837827a17de
 
 build:
   noarch: python
-  number: 1001
+  number: 0
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
